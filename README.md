@@ -13,10 +13,11 @@
    - https://lidarportal.dnr.wa.gov/
    - King County West 2021
       
-2. City of Redmond, WA, neighborhood boundaries and roadway centerlines
+2. City of Redmond, WA, GIS data
    - https://www.redmond.gov/424/Data-Downloads
+   - Neighborhood boundaries (https://www.redmond.gov/DocumentCenter/View/40/Neighborhoods-ZIP)
    - Roadway centerlines (https://www.redmond.gov/DocumentCenter/View/31/Street-Centerline-ZIP)
-   - Neighborhood boundaries (https://www.redmond.gov/DocumentCenter/View/40/Neighborhoods-ZIP)  
+   
 
 ## Tools & Packages
 1. Fiona
