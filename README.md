@@ -39,7 +39,7 @@
 9. Scipy
    - https://scipy.org/
 
-## Methodology
+## Setup Recommendations
 1. Data Collection (Python & QGIS)
    - Geospatial Datasets, Landslide Inventory, Fieldwork (May and July 2021)
 2. Calculate Coseismic Landslide Probability (Python)
