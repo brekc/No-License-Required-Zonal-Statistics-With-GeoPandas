@@ -43,17 +43,15 @@
 Anaconda is a distribution of Python and other languages that provides tools for environment management. [Install](https://www.anaconda.com/) Anaconda, then follow the instructions below:
 
 1. Clone the repository
-   - Open a command prompt terminal and install git:
-  ```
-  conda install git
+Open a command prompt terminal and install git:
 
-  ```
-   -    sd
-   -    sd
-   -    
+```
+conda install git
 
+```
 
-   - Open a command prompt terminal and install git:
+Open a command prompt terminal and install git:
+
 ```
 git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_GeoPandas.git
 
