@@ -44,14 +44,14 @@ Anaconda is a distribution of Python and other languages that provides tools for
 
 1. Clone the repository
    - Open a command prompt terminal and install git:
-   -    sd
-   -    sd
-   -    sd
-   -    
 ```
 conda install git
 
 ```
+   -    sd
+   -    sd
+   -    
+
 
    - Open a command prompt terminal and install git:
 ```
