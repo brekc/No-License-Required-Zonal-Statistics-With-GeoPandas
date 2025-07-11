@@ -44,18 +44,10 @@
 Anaconda is a distribution of Python and other languages that provides tools for environment management. [Install](https://www.anaconda.com/) Anaconda, then follow the instructions below:
 
 1. Clone the repository and create a new environment
-   - Open a command prompt terminal and install git:/n
-'''
-function git_install() {
-  console.log("conda install git");
-}
-'''
-  - 
-
+   - Open a command prompt terminal and install git:
 ```
-function test() {
-  console.log("This code will have a copy button to the right of it");
-}
+conda install git
+
 ```
 
 
