@@ -51,7 +51,14 @@ function git_install() {
 }
 '''
   - 
-     
+
+```
+function test() {
+  console.log("This code will have a copy button to the right of it");
+}
+```
+
+
 2. Calculate Coseismic Landslide Probability (Python)
    - Calculate probability for 30 M9 CSZ scenarios (Frankel et al., 2018)
 3. Geospatial Analysis (QGIS)
