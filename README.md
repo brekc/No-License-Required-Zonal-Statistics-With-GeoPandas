@@ -21,13 +21,21 @@
 
 ## Tools & Packages
 * [GDAL/OGR](https://gdal.org/)
+  
 * [GeoPandas](https://geopandas.org/)
+  
 * [Matplotlib](https://matplotlib.org/)
+  
 * [Numpy](https://numpy.org/)
+  
 * [Pandas](https://pandas.pydata.org/)
+  
 * [Rasterio](https://rasterio.readthedocs.io/)
+  
 * [Rasterstats](https://pythonhosted.org/rasterstats/)
+  
 * [Seaborn](https://seaborn.pydata.org/)
+  
 * [Scipy](https://scipy.org/)
 
 ## Setup Recommendations
