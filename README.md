@@ -20,39 +20,35 @@
    
 
 ## Tools & Packages
-1. GDAL/OGR
-   - https://gdal.org/
-2. GeoPandas
-   - https://geopandas.org/
-3. Matplotlib
-   - https://matplotlib.org/
-4. Numpy
-   - https://numpy.org/
-5. Pandas
-   - https://pandas.pydata.org/
-6. Rasterio
-   - https://rasterio.readthedocs.io/
-7. Rasterstats
-   - https://pythonhosted.org/rasterstats/
-8. Seaborn
-   - https://seaborn.pydata.org/
-9. Scipy
-   - https://scipy.org/
+* [GDAL/OGR](https://gdal.org/)
+* [GeoPandas](https://geopandas.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Numpy](https://numpy.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Rasterio](https://rasterio.readthedocs.io/)
+* [Rasterstats](https://pythonhosted.org/rasterstats/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Scipy](https://scipy.org/)
 
 ## Setup Recommendations
 
 Anaconda is a distribution of Python and other languages that provides tools for environment management. [Install](https://www.anaconda.com/) Anaconda, then follow the instructions below:
 
-1. Clone the repository and create a new environment
+1. Clone the repository
    - Open a command prompt terminal and install git:
 ```
 conda install git
 
 ```
 
+   - git clone the repository:
+```
+git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_GeoPandas.git
 
-2. Calculate Coseismic Landslide Probability (Python)
-   - Calculate probability for 30 M9 CSZ scenarios (Frankel et al., 2018)
+```
+
+2. Create a new environment
+   - 
 3. Geospatial Analysis (QGIS)
    - Find overlap between 30 probability models for 50% and 75% probability thresholds, High-risk Area Estimates
 4. Sensitivity Analysis for PGV Spatial Resolution (Python)
