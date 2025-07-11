@@ -40,8 +40,18 @@
    - https://scipy.org/
 
 ## Setup Recommendations
-1. Data Collection (Python & QGIS)
-   - Geospatial Datasets, Landslide Inventory, Fieldwork (May and July 2021)
+
+Anaconda is a distribution of Python and other languages that provides tools for environment management. [Install](https://www.anaconda.com/) Anaconda, then follow the instructions below:
+
+1. Clone the repository and create a new environment
+   - Open a command prompt terminal and install git:
+'''
+function git_install(){
+  console.log("conda install git");
+}
+'''
+  - 
+     
 2. Calculate Coseismic Landslide Probability (Python)
    - Calculate probability for 30 M9 CSZ scenarios (Frankel et al., 2018)
 3. Geospatial Analysis (QGIS)
