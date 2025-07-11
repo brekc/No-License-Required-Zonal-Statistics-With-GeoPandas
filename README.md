@@ -56,7 +56,16 @@ git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_Geo
 ```
 
 2. Create a new environment
-   - 
+   - Change directories to where GIS_Python_Env.yml is located
+```
+cd No_License_Required-Zonal_Statistics_With_GeoPandas
+
+```
+
+```
+cd Setup
+
+```
 3. Geospatial Analysis (QGIS)
    - Find overlap between 30 probability models for 50% and 75% probability thresholds, High-risk Area Estimates
 4. Sensitivity Analysis for PGV Spatial Resolution (Python)
