@@ -42,33 +42,45 @@
 
 Anaconda is a distribution of Python and other languages that provides tools for environment management. [Install](https://www.anaconda.com/) Anaconda, then follow the instructions below:
 
-* **Clone the repository**
+1. **Clone the repository**
 
 Open a command prompt terminal and install git:
 
 ```
 conda install git
-
 ```
 
 Open a command prompt terminal and install git:
 
 ```
 git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_GeoPandas.git
-
 ```
 
-* **Create a new environment**
-   - Change directories to where GIS_Python_Env.yml is located
+2. **Create a new environment**
+
+Change directories to where GIS_Python_Env.yml is located
+
 ```
 cd No_License_Required-Zonal_Statistics_With_GeoPandas
-
 ```
 
 ```
 cd Setup
+```
+
+Create an environment with GIS_Python_Env.yml
 
 ```
+conda env create -f GIS_Python_Env.yml
+```
+
+Activate the environment
+
+```
+conda activate GIS_Python_Env
+```
+
+
 3. Geospatial Analysis (QGIS)
    - Find overlap between 30 probability models for 50% and 75% probability thresholds, High-risk Area Estimates
 4. Sensitivity Analysis for PGV Spatial Resolution (Python)
