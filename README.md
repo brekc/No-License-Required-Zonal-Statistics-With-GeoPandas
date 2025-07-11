@@ -42,7 +42,7 @@
 
 Anaconda is a distribution of Python and other languages that provides tools for environment management. [Install](https://www.anaconda.com/) Anaconda, then follow the instructions below:
 
-**Clone the repository**
+* **Clone the repository**
 
 Open a command prompt terminal and install git:
 
@@ -58,7 +58,7 @@ git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_Geo
 
 ```
 
-**Create a new environment**
+* **Create a new environment**
    - Change directories to where GIS_Python_Env.yml is located
 ```
 cd No_License_Required-Zonal_Statistics_With_GeoPandas
