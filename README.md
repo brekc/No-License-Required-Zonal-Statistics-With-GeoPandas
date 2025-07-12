@@ -91,10 +91,8 @@ jupyter notebook
 > [!NOTE]
 > You can also launch Jupyter Notebook or Visual Studio Code through Anaconda Navigator. Make sure the kernel is set to the GIS_Python_Env environment.
 
-3. Geospatial Analysis (QGIS)
-   - Find overlap between 30 probability models for 50% and 75% probability thresholds, High-risk Area Estimates
-4. Sensitivity Analysis for PGV Spatial Resolution (Python)
-   - Percent change for high-risk area between 100 m and 50 m probability overlap maps
+4. Run all code cells in GDAL_Raster_Priming.ipynb
+   - GDAL_Raster_Priming.ipynb will create the additional input files for Geopandas_Zonal_Statistics.ipynb
 
 ## Relevant Resources
 1. USGS webpage on earthquake-triggered landslides and the Nowicki Jessee et al. (2018) model 
