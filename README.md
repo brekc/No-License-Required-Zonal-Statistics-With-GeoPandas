@@ -13,8 +13,8 @@
    - [WA DNR - Washington LiDAR Portal](https://lidarportal.dnr.wa.gov/)
    - King County West 2021
       
-2. City of Redmond, WA
-   - [Maps & GIS](https://www.redmond.gov/416/Maps-GIS)
+2. Roadways and neighborhoods of Redmond, WA
+   - [City of Redmond, WA, Maps & GIS](https://www.redmond.gov/416/Maps-GIS)
    - [Neighborhood boundaries](https://www.redmond.gov/DocumentCenter/View/40/Neighborhoods-ZIP)
    - [Roadway centerlines](https://www.redmond.gov/DocumentCenter/View/31/Street-Centerline-ZIP)
    
