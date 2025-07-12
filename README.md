@@ -80,6 +80,16 @@ Activate the environment
 conda activate GIS_Python_Env
 ```
 
+3. **Open IPython Notebooks (.ipynb)**
+
+Launch Jupyter Notebook
+
+```
+jupyter notebook
+```
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
 3. Geospatial Analysis (QGIS)
    - Find overlap between 30 probability models for 50% and 75% probability thresholds, High-risk Area Estimates
