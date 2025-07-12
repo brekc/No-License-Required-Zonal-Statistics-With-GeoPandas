@@ -89,7 +89,7 @@ jupyter notebook
 ```
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> You can also launch Jupyter Notebook or Visual Studio Code through Anaconda Navigator. Make sure the kernel is set to the GIS_Python_Env environment.
 
 3. Geospatial Analysis (QGIS)
    - Find overlap between 30 probability models for 50% and 75% probability thresholds, High-risk Area Estimates
