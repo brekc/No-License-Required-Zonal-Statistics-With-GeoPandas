@@ -95,7 +95,15 @@ jupyter notebook
    - GDAL_Raster_Priming.ipynb will create the additional input files for Geopandas_Zonal_Statistics.ipynb
 
 ## Relevant Resources
-* ArcGIS Zonal stats
-   - https://earthquake.usgs.gov/data/ground-failure/background.php
+* Zonal statistics in ArcGIS
+   - [How zonal statistics tools work](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-zonal-statistics-works.htm)
+   - [Zonal Statistics (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm)
+   - [Zonal Statistics as Table (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm)
+     
+* Zonal statistics in ArcGIS
+   - [How zonal statistics tools work](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-zonal-statistics-works.htm)
+   - [Zonal Statistics (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm)
+   - [Zonal Statistics as Table (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm)
+     
 * Slope Classes
    - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2017JF004494
