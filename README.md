@@ -95,7 +95,7 @@ jupyter notebook
    - GDAL_Raster_Priming.ipynb will create the additional input files for Geopandas_Zonal_Statistics.ipynb
 
 ## Relevant Resources
-1. USGS webpage on earthquake-triggered landslides and the Nowicki Jessee et al. (2018) model 
+* USGS webpage on earthquake-triggered landslides and the Nowicki Jessee et al. (2018) model 
    - https://earthquake.usgs.gov/data/ground-failure/background.php
-2. Article on the Nowicki Jessee et al. (2018) model
+* Article on the Nowicki Jessee et al. (2018) model
    - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2017JF004494
