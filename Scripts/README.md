@@ -1,6 +1,6 @@
 ## ArcGIS Python Environment Setup
 
-Configure an ArcGIS Python environment to include GeoPandas and Rasterio before trying the Python scripts. You can add GeoPandas, Rasterio, and other packages to a base ArcGIS Python environment with the [Deep Learning Libraries Installers for ArcGIS](https://github.com/Esri/deep-learning-frameworks) or create a new environment. If you want to create a new Python environment through ArcGIS Pro:
+Configure an ArcGIS Python environment to include GeoPandas and Rasterio before trying the Python scripts. You can add GeoPandas, Rasterio, and other packages to a default ArcGIS Python environment with the [Deep Learning Libraries Installers for ArcGIS](https://github.com/Esri/deep-learning-frameworks) or create a new environment. If you want to create a new Python environment through ArcGIS Pro:
 
 1. **Clone the base environment**\
 Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispro-py3 &rarr; Save the enviornment to ..\ESRI\conda\envs\arcgispro-py3-clone or ..\anaconda3\envs
@@ -59,3 +59,20 @@ If you are working with an IDE, set the Python interpreter of the target environ
 ![](/Scripts/ArcGIS_Env_Setup/Conda_Nav_IDEs.png)
 
 ## Batch file (.bat) Setup
+
+The zonal_statistics_gpd_arcgis_cmd.py script is an example of how to build command-line tools with [argparse](https://docs.python.org/3/library/argparse.html). Edit zonal_statistics_gpd_arcgis_cmd.txt to include the desired Python interpreter and path to zonal_statistics_gpd_arcgis_cmd.py:
+
+> [!WARNING]
+> File paths will vary based on your operating system.
+
+
+1. **Open zonal_statistics_gpd_arcgis_cmd.txt in a text editor**
+
+2. **Save as batch (.bat) file**
+   
+3. **Test by dragging and dropping the batch file into a command prompt or terminal and enter '-h' to see the help message** 
+
+
+
+
+
