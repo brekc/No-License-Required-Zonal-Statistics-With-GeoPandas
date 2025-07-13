@@ -3,18 +3,26 @@
 Configure an ArcGIS Python environment to include GeoPandas and Rasterio before trying the Python scripts. You can add GeoPandas, Rasterio, and other packages to a base ArcGIS Python environment with the [Deep Learning Libraries Installers for ArcGIS](https://github.com/Esri/deep-learning-frameworks) or create a new environment. If you want to create a new Python environment through ArcGIS Pro:
 
 1. **Clone the base environment**\
-Settings &rarr; Package Manager &rarr;
+Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispro-py3 &rarr; Save the enviornment to ..\ESRI\conda\envs\arcgispro-py3-clone or ..\anaconda3\envs
 
+You can also clone the environment with the Anaconda command prompt, but use arcgispro-py3 path for your installation.   
+```
+conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3 --pinned
+```
 
+2. **Add packages to the cloned environment**\
+Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas, and Rasterio
 
 ```
-conda install git
+conda env list
 ```
 
-Use git clone:
+```
+conda activate arcgis_pro
+```
 
 ```
-git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_GeoPandas.git
+conda install -c esri fiona geopandas rasterio
 ```
 
 2. **Create a new environment**
