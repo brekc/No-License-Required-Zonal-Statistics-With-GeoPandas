@@ -5,13 +5,18 @@ Configure an ArcGIS Python environment to include GeoPandas and Rasterio before 
 1. **Clone the base environment**\
 Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispro-py3 &rarr; Save the enviornment to ..\ESRI\conda\envs\arcgispro-py3-clone or ..\anaconda3\envs
 
-You can also clone the environment with the Anaconda command prompt, but use arcgispro-py3 path for your installation.   
+![](/Scripts/ArcGIS_Env_Setup/Clone_Env.png)
+
+You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
 ```
 conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3 --pinned
 ```
 
 2. **Add packages to the cloned environment**\
 Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas, and Rasterio
+
+
+![](/Scripts/ArcGIS_Env_Setup/Add_Packages.png)
 
 ```
 conda env list
