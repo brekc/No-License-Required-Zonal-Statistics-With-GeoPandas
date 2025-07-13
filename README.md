@@ -50,7 +50,7 @@ Open a command prompt terminal and install git:
 conda install git
 ```
 
-Open a command prompt terminal and install git:
+Clone the repository:
 
 ```
 git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_GeoPandas.git
