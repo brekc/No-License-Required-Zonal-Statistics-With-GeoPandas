@@ -53,37 +53,9 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 ![](/Scripts/ArcGIS_Env_Setup/Spyder_Python_Interp.png)
 
-
-```
-cd No_License_Required-Zonal_Statistics_With_GeoPandas
-```
-
-```
-cd Setup
-```
-
-Create an environment with GIS_Python_Env.yml
-
-```
-conda env create -f GIS_Python_Env.yml
-```
-
-Activate the environment
-
-```
-conda activate GIS_Python_Env
-```
-
-3. **Open IPython Notebooks (.ipynb)**
-
-Launch Jupyter Notebook
-
-```
-jupyter notebook
-```
-
 > [!NOTE]
-> You can also launch Jupyter Notebook or Visual Studio Code through Anaconda Navigator. Make sure the kernel is set to the GIS_Python_Env environment.
+> You can also activate environments and launch IDEs through Anaconda Navigator.
 
-4. Run all code cells in GDAL_Raster_Priming.ipynb
-   - GDAL_Raster_Priming.ipynb will create the additional input files for Geopandas_Zonal_Statistics.ipynb
+![](/Scripts/ArcGIS_Env_Setup/Conda_Nav_IDEs.png)
+
+## Batch file (.bat) Setup
