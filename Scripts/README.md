@@ -39,7 +39,9 @@ If you are working with an IDE, set the Python interpreter of the target environ
 **[Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial):** View &rarr; Command Palette &rarr; Python: Select Interpreter
 
 
-**[Pycharm Community](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html#):** Create project for '..\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts' &rarr; Settings &rarr; Project &rarr; Python Interpreter &rarr; Add Python Interpreter
+**[Pycharm Community](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html#):** Settings &rarr; Project &rarr; Python Interpreter &rarr; Add Python Interpreter
+> [!NOTE]
+> You will need to create a project for '..\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts'.
 
 **[Spyder]([https://code.visualstudio.com/docs/python/python-tutorial](https://docs.spyder-ide.org/current/faq.html)):** Preferences &rarr; Python Interpreter
 
