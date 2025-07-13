@@ -102,4 +102,5 @@ jupyter notebook
      
 * Slope gradient classifications
    - [Guidance for Determining the Slope - Southern Tier Central Regional Planning and Development Board, 2021](https://www.stcplanning.org/wp-content/uploads/2021/07/DeterminingSlope.pdf)
+   - [Slope Gradient - Government of Canada](https://sis.agr.gc.ca/cansis/nsdb/slc/v3.2/cmp/slope.html)
 
