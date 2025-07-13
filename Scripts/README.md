@@ -18,6 +18,8 @@ Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas,
 
 ![](/Scripts/ArcGIS_Env_Setup/Add_Packages.png)
 
+
+With the command prompt, you will 'conda activate' the cloned environment and install from the Esri channel (conda install -c esri) 
 ```
 conda env list
 ```
