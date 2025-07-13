@@ -79,7 +79,7 @@ Edit the paths for the Python interpreter and zonal_statistics_gpd_arcgis_cmd.py
 
 ![](/Scripts/ArcGIS_Env_Setup/Txt_to_Bat_4.png)
    
-4. **Test by dragging and dropping the batch file into a command prompt or terminal and enter '-h' to see the help message** 
+4. **Test by dragging and dropping the batch file into a command prompt or terminal, type -h, then enter to see the help message** 
 
 ![](/Scripts/ArcGIS_Env_Setup/CMD_Help.png)
 
