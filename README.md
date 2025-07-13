@@ -101,5 +101,5 @@ jupyter notebook
    - [Zonal Statistics as Table (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm)
      
 * Slope gradient classifications
-   - [Guidance for Determining the Slope - Southern Tier Central Regional Planning and Development Board, 2021]([https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-zonal-statistics-works.htm](https://www.stcplanning.org/wp-content/uploads/2021/07/DeterminingSlope.pdf))
+   - [Guidance for Determining the Slope - Southern Tier Central Regional Planning and Development Board, 2021](https://www.stcplanning.org/wp-content/uploads/2021/07/DeterminingSlope.pdf)
 
