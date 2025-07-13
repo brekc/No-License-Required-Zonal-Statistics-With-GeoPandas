@@ -49,7 +49,7 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 ![](/Scripts/ArcGIS_Env_Setup/PyCharm_Python_Interp_2.png)
 
-**[Spyder]([https://code.visualstudio.com/docs/python/python-tutorial](https://docs.spyder-ide.org/current/faq.html)):** Preferences &rarr; Python Interpreter
+**[Spyder](https://docs.spyder-ide.org/current/faq.html):** Preferences &rarr; Python Interpreter
 
 ![](/Scripts/ArcGIS_Env_Setup/Spyder_Python_Interp.png)
 
