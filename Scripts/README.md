@@ -43,7 +43,7 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 **[Pycharm Community](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html#):** Settings &rarr; Project &rarr; Python Interpreter &rarr; Add Python Interpreter
 > [!NOTE]
-> You will need to create a project for '..\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts'.
+> You will need to create a project for ..\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts.
 
 ![](/Scripts/ArcGIS_Env_Setup/PyCharm_Python_Interp.png)
 
