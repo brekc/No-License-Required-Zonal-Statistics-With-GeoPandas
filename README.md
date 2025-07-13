@@ -44,7 +44,7 @@ Anaconda is a distribution of Python and other languages that provides tools for
 
 1. **Clone the repository**
 
-Open Anaconda command prompt/terminal and install git:
+Open Anaconda command prompt or terminal and install git:
 
 ```
 conda install git
