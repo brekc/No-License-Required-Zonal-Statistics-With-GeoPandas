@@ -38,13 +38,20 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 **[Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial):** View &rarr; Command Palette &rarr; Python: Select Interpreter
 
+![](/Scripts/ArcGIS_Env_Setup/VS_Code_Python_Interp.png)
+
 
 **[Pycharm Community](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html#):** Settings &rarr; Project &rarr; Python Interpreter &rarr; Add Python Interpreter
 > [!NOTE]
 > You will need to create a project for '..\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts'.
 
+![](/Scripts/ArcGIS_Env_Setup/PyCharm_Python_Interp.png)
+
+![](/Scripts/ArcGIS_Env_Setup/PyCharm_Python_Interp_2.png)
+
 **[Spyder]([https://code.visualstudio.com/docs/python/python-tutorial](https://docs.spyder-ide.org/current/faq.html)):** Preferences &rarr; Python Interpreter
 
+![](/Scripts/ArcGIS_Env_Setup/Spyder_Python_Interp.png)
 
 
 ```
