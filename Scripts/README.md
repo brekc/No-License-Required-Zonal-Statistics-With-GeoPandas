@@ -65,14 +65,23 @@ The zonal_statistics_gpd_arcgis_cmd.py script is an example of how to build comm
 > [!WARNING]
 > File paths will vary based on your operating system.
 
-
 1. **Open zonal_statistics_gpd_arcgis_cmd.txt in a text editor**
 
-2. **Save as batch (.bat) file**
+![](/Scripts/ArcGIS_Env_Setup/Txt_to_Bat_1.png)
+
+Edit the paths for the Python interpreter and zonal_statistics_gpd_arcgis_cmd.py script.
+
+![](/Scripts/ArcGIS_Env_Setup/Txt_to_Bat_2.png)
+
+![](/Scripts/ArcGIS_Env_Setup/Txt_to_Bat_3.png)
    
-3. **Test by dragging and dropping the batch file into a command prompt or terminal and enter '-h' to see the help message** 
+3. **Save as batch (.bat) file**
 
+![](/Scripts/ArcGIS_Env_Setup/Txt_to_Bat_4.png)
+   
+4. **Test by dragging and dropping the batch file into a command prompt or terminal and enter '-h' to see the help message** 
 
+![](/Scripts/ArcGIS_Env_Setup/CMD_Help.png)
 
 
 
