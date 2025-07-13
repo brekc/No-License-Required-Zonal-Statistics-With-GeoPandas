@@ -1,3 +1,3 @@
 @echo off
-CALL "EDIT_PATH_TO\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\python.exe" "FINISH_PATH_TO\Scripts\zonal_statistics_gpd_rio_argparse.py" %*
+"EDIT_PATH_TO\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\python.exe" "FINISH_PATH_TO\Scripts\zonal_statistics_gpd_arcgis_cmd.py" %*
 pause
