@@ -100,10 +100,6 @@ jupyter notebook
    - [Zonal Statistics (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm)
    - [Zonal Statistics as Table (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm)
      
-* Zonal statistics in ArcGIS
-   - [How zonal statistics tools work](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-zonal-statistics-works.htm)
-   - [Zonal Statistics (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm)
-   - [Zonal Statistics as Table (Spatial Analyst)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm)
-     
-* Slope Classes
-   - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2017JF004494
+* Slope gradient classifications
+   - [Guidance for Determining the Slope - Southern Tier Central Regional Planning and Development Board, 2021]([https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-zonal-statistics-works.htm](https://www.stcplanning.org/wp-content/uploads/2021/07/DeterminingSlope.pdf))
+
