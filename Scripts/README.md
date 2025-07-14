@@ -63,7 +63,7 @@ conda activate arcgis_pro
 conda install -c esri fiona geopandas rasterio
 ```
 
-3. **Open the Python scripts (.py)**
+4. **Open the Python scripts (.py)**
 
 If you are working with an IDE, set the Python interpreter of the target environment:
 
@@ -88,8 +88,14 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 ![](/Scripts/ArcGIS_Env_Setup/Conda_Nav_IDEs.png)
 
-4. **Run gdb_setup.py first to test your setup and create the geodatabase needed for the other scripts**
-   
+5. **Run gdb_setup.py first to test your setup and create the geodatabase needed for the other scripts**
+
+## Warning and Error Message Handling
+This is a list of warnings and error messages with possible solutions:
+- ...UserWarning: pyproj unable to set database path. _pyproj_global_context_initialize():
+   - [Stack Overflow Post](https://stackoverflow.com/questions/69630630/on-fresh-conda-installation-of-pyproj-pyproj-unable-to-set-database-path-pypr)
+   - [Post on Medium](https://mafarrag.medium.com/geospatial-python-packages-common-errors-150986b9cbfd)  
+
 ## Batch file (.bat) Setup
 
 The zonal_statistics_gpd_arcgis_cmd.py script is an example of how to build command-line tools with [argparse](https://docs.python.org/3/library/argparse.html). Edit zonal_statistics_gpd_arcgis_cmd.txt to include the desired Python interpreter and path to zonal_statistics_gpd_arcgis_cmd.py:
