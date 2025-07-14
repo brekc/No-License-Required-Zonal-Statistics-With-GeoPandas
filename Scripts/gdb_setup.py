@@ -1,7 +1,7 @@
 """
  Name:         gdb_setup.py
 
- Purpose:      Creates a geodatabase for zonal_statistics_gpd_arcgis_cmd.py 
+ Purpose:      Creates a geodatabase for zonal_statistics_gpd_arcgis.py 
 
  Author:       Brek Chiles (Email-brekchiles@gmail.com, GitHub-brekc)
 
@@ -18,8 +18,10 @@ import arcpy
 import os
 
 # Setup directory for gdb
-gdb_dir = os.getcwd()
+gdb_dir = os.path.dirname(os.path.abspath(__file__))
+print(f"Current working directory: {gdb_dir}")
 repo_dir = gdb_dir.rsplit(os.sep, 1)[0]
+print(f"Repository directory: {repo_dir}")
 
 arcpy.env.workspace = gdb_dir
 arcpy.env.overwriteOutput = True
