@@ -40,7 +40,6 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 ![](/Scripts/ArcGIS_Env_Setup/VS_Code_Python_Interp.png)
 
-
 **[Pycharm Community](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html#):** Settings &rarr; Project &rarr; Python Interpreter &rarr; Add Python Interpreter
 > [!NOTE]
 > You will need to create a project for ..\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts.
@@ -85,5 +84,8 @@ Edit the paths for the Python interpreter and zonal_statistics_gpd_arcgis_cmd.py
 
 ![](/Scripts/ArcGIS_Env_Setup/CMD_Help.png)
 
+A command for the geodatabase from gdb_setup.py will look like:
 
-
+```
+C:\Users\brekc\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts\zonal_statistics_gpd_arcgis_cmd.bat -gdb C:\Users\brekc\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts\zonal_statistics_gpd_arcgis.gdb -zone Redmond_Roads -raster King_Co_2021_Ext_Perc -touched On -output zonal_stats_test
+``` 
