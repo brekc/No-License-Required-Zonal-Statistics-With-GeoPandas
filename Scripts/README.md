@@ -44,8 +44,8 @@ conda install -c esri fiona geopandas rasterio
 pip install fiona geopandas rasterio
 ```
 
-
-You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
+> [!Note]
+> You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
 
 ```
 conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3
