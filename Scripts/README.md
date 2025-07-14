@@ -9,7 +9,7 @@ Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispr
 
 
 
-2. **Open the Python Command Prompt (Search "Python Command" and make sure it is located in ..\ArcGIS\Arc Pro**\
+2. **Activate the cloned environment, then open the Python Command Prompt (Search "Python Command" and make sure it is located in ..\ArcGIS\Arc Pro**\
 Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas, and Rasterio
 
 
