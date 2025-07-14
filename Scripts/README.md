@@ -9,7 +9,7 @@ Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispr
 
 
 
-2. **Add packages to the cloned environment**\
+2. **Open the Python Command Prompt (Search "Python Command" and make sure it is located in ..\ArcGIS\Arc Pro**\
 Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas, and Rasterio
 
 
@@ -22,7 +22,7 @@ With the command prompt, you will 'conda activate' the cloned environment and in
 You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
 
 ```
-conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3 --pinned
+conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3
 ```
 
 ```
