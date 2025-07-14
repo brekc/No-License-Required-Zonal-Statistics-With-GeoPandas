@@ -38,7 +38,7 @@ conda install -c esri fiona geopandas rasterio
 ```
 
 > [!Tip]
-> You can try 'pip install' if you have issues with conda install.
+> You can try pip install if you have issues with conda install.
 
 ```
 pip install fiona geopandas rasterio
