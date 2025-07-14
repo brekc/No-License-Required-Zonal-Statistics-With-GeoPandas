@@ -15,6 +15,7 @@
 """
 
 import arcpy
+import os
 import pandas as pd
 import geopandas as gpd
 import rasterio as rio
@@ -25,41 +26,37 @@ from rasterio.mask import mask
 from osgeo import gdal
 gdal.SetConfigOption("GDAL_MEM_ENABLE_OPEN", "YES")
 
+# Setup directory for gdb
+target_dir = os.path.dirname(os.path.abspath(__file__))
+print(f"Current working directory: {target_dir}")
+gdb_path = os.path.join(target_dir, 'zonal_statistics_gpd_arcgis.gdb')
+print(f"Geodatabase: {gdb_path}")
+
 # Enviornment Setup
-arcpy.env.workspace = r'C:\Users\brekc\OneDrive\Documents\ArcGIS\Projects\Road_Slope_Analysis_Education_Hill_Redmond_WA'
+arcpy.env.workspace = target_dir
 arcpy.env.overwriteOutput = True
 
 def main():
     try:
         print('Running script...')
 
-        # File geodatabase path
-        file_gdb = r'C:\Users\brekc\OneDrive\Documents\ArcGIS\Projects\Road_Slope_Analysis_Education_Hill_Redmond_WA\Road_Slope_Analysis_Education_Hill_Redmond_WA.gdb'
-
-        # Set input paths
-        raster_data = r'C:\Users\brekc\OneDrive\Documents\ArcGIS\Projects\Road_Slope_Analysis_Education_Hill_Redmond_WA\Road_Slope_Analysis_Education_Hill_Redmond_WA.gdb\Redmond_Slope_Perc'
-        ras_tif = r'C:\Users\brekc\OneDrive\Documents\ArcGIS\Projects\Road_Slope_Analysis_Education_Hill_Redmond_WA\Redmond_Slope_Perc.tif'
+        # Set input raster paths
+        raster_data = os.path.join(gdb_path, 'King_Co_2021_Ext_Perc')
+        raster_tif = os.path.join(target_dir, 'King_Co_2021_Ext_Perc.tif')
 
         # Convert file geodatabase raster to tif
         # Rasterio and GDAL versioning differences can cause errors with file geodatabase rasters
         print('Converting file geodatabse raster data to TIF format...')
-        # Remove all files matching the raster_tif base name (e.g., .tif, .aux.xml, .ovr, etc.)
-        base, _ = os.path.splitext(raster_tif)
-        for f in os.listdir(os.path.dirname(raster_tif)):
-                if f.startswith(os.path.basename(base)):
-                    try:
-                        os.remove(os.path.join(os.path.dirname(raster_tif), f))
-                    except Exception as e:
-                        print(f"Could not remove {f}: {e}")
+
         arcpy.conversion.RasterToOtherFormat(raster_data, arcpy.env.workspace)
 
         # Open raster data with rasterio
         print('Opening raster in Rasterio ...')
-        raster_rio = rio.open(ras_tif)
+        raster_rio = rio.open(raster_tif)
 
         # Create geodataframe(gdf) for zone boundary
         print('Opening zone boundary as a geodataframe...')
-        zone_gdf = gpd.read_file(file_gdb, layer='Redmond_Roads', driver='OpenFileGDB')
+        zone_gdf = gpd.read_file(gdb_path, layer='Redmond_Roads', driver='OpenFileGDB')
 
         # Trim zone gdf to needed fields
         print('Trimming zone geodataframe to needed fields...')
@@ -94,8 +91,20 @@ def main():
         zone_gdf_trim_buff['variance'] = zone_gdf_trim_buff.geometry.apply(masked_array).apply(np.var)
 
         # Save zonal statistics gdf to output file
-        print('Saving zonal statistics results to file geodatabase...')            
-        zone_gdf_trim_buff.to_file(file_gdb, layer='Zonal_Statistics_Results', driver='OpenFileGDB')
+        print('Saving zonal statistics results to file geodatabase...')
+        zone_gdf_trim_buff.to_file(gdb_path, layer='Zonal_Statistics_Results', driver='OpenFileGDB')
+
+        # Close the raster file before deleting
+        raster_rio.close()
+
+        # Remove all files matching the raster_tif base name (e.g., .tif, .aux.xml, .ovr, etc.)
+        base, _ = os.path.splitext(raster_tif)
+        for f in os.listdir(os.path.dirname(raster_tif)):
+                if f.startswith(os.path.basename(base)):
+                    try:
+                        os.remove(os.path.join(os.path.dirname(raster_tif), f))
+                    except Exception as e:
+                        print(f"Could not remove {f}: {e}")
 
         pass
 

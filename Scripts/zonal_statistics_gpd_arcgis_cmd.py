@@ -69,35 +69,18 @@ from osgeo import gdal
 gdal.SetConfigOption("GDAL_MEM_ENABLE_OPEN", "YES")
 
 # Enviornment Setup
-arcpy.env.workspace = file_gdb
+arcpy.env.workspace = raster_tif_env
 arcpy.env.overwriteOutput = True
 
 def main():
     try:
         print('Running script...')
 
-        # Set GDAL configuration option
-        from osgeo import gdal
-        gdal.SetConfigOption("GDAL_MEM_ENABLE_OPEN", "YES")
-
-        # Enviornment Setup
-        arcpy.env.workspace = file_gdb
-        arcpy.env.overwriteOutput = True
-
         # Convert file geodatabase raster to tif
         # Rasterio and GDAL versioning differences can cause errors with file geodatabase rasters
         print('Converting file geodatabse raster data to TIF format...')
-        if os.path.exists(raster_tif):
-            print('Overwriting existing raster tif...')
-            # Remove all files matching the raster_tif base name (e.g., .tif, .aux.xml, .ovr, etc.)
-            base, _ = os.path.splitext(raster_tif)
-            for f in os.listdir(os.path.dirname(raster_tif)):
-                if f.startswith(os.path.basename(base)):
-                    try:
-                        os.remove(os.path.join(os.path.dirname(raster_tif), f))
-                    except Exception as e:
-                        print(f"Could not remove {f}: {e}")
-        arcpy.conversion.RasterToOtherFormat(gdb_raster, raster_tif_env)
+
+        arcpy.conversion.RasterToOtherFormat(gdb_raster, arcpy.env.workspace)
 
         # Open raster data with rasterio
         print('Opening raster in Rasterio ...')
@@ -131,6 +114,18 @@ def main():
         # Save zonal statistics gdf to output file
         print('Saving zonal statistics results to file geodatabase...')            
         zone_gdf.to_file(file_gdb, layer=zonal_stats_out, driver='OpenFileGDB')
+
+        # Close the raster file before deleting
+        raster_rio.close()
+
+        # Remove all files matching the raster_tif base name (e.g., .tif, .aux.xml, .ovr, etc.)
+        base, _ = os.path.splitext(raster_tif)
+        for f in os.listdir(os.path.dirname(raster_tif)):
+                if f.startswith(os.path.basename(base)):
+                    try:
+                        os.remove(os.path.join(os.path.dirname(raster_tif), f))
+                    except Exception as e:
+                        print(f"Could not remove {f}: {e}")
 
         pass
 
