@@ -3,14 +3,11 @@
 Configure an ArcGIS Python environment to include GeoPandas and Rasterio before trying the Python scripts. You can add GeoPandas, Rasterio, and other packages to a default ArcGIS Python environment with the [Deep Learning Libraries Installers for ArcGIS](https://github.com/Esri/deep-learning-frameworks) or create a new environment. If you want to create a new Python environment through ArcGIS Pro:
 
 1. **Clone the base environment**\
-Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispro-py3 &rarr; Save the enviornment to ..\ESRI\conda\envs\arcgispro-py3-clone or ..\anaconda3\envs
+Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispro-py3 &rarr; Save the enviornment to ..\ESRI\conda\envs or ..\anaconda3\envs
 
 ![](/Scripts/ArcGIS_Env_Setup/Clone_Env.png)
 
-You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
-```
-conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3 --pinned
-```
+
 
 2. **Add packages to the cloned environment**\
 Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas, and Rasterio
@@ -20,6 +17,14 @@ Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas,
 
 
 With the command prompt, you will 'conda activate' the cloned environment and install from the Esri channel (conda install -c esri) 
+
+
+You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
+
+```
+conda create --name arcgis_pro --clone C:\Users\brekc\AppData\Local\Programs\ArcGIS\Pro\bin\Python\envs\arcgispro-py3 --pinned
+```
+
 ```
 conda env list
 ```
