@@ -1,22 +1,48 @@
 ## ArcGIS Python Environment Setup
 
+> [!WARNING]
+> File paths will vary based on your operating system.
+
 Configure an ArcGIS Python environment to include GeoPandas and Rasterio before trying the Python scripts. You can add GeoPandas, Rasterio, and other packages to a default ArcGIS Python environment with the [Deep Learning Libraries Installers for ArcGIS](https://github.com/Esri/deep-learning-frameworks) or create a new environment. If you want to create a new Python environment through ArcGIS Pro:
 
-1. **Clone the base environment**\
+1. **Clone the default environment**\
 Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispro-py3 &rarr; Save the enviornment to ..\ESRI\conda\envs or ..\anaconda3\envs
 
 ![](/Scripts/ArcGIS_Env_Setup/Clone_Env.png)
 
-
-
-2. **Activate the cloned environment, then open the Python Command Prompt (Search "Python Command" and make sure it is located in ..\ArcGIS\Arc Pro**\
-Activate the cloned environment &rarr; Add Packages &rarr; Add Fiona, Geopandas, and Rasterio
-
+2. **Activate the cloned environment, then open the Python Command Prompt**\
+Search "Python Command" and make sure it is located in ..\ArcGIS\Arc Pro\
+You should see the cloned environment (arcgispro-gpd-rio) listed in the Python Command Prompt\
 
 ![](/Scripts/ArcGIS_Env_Setup/Add_Packages.png)
 
 
-With the command prompt, you will 'conda activate' the cloned environment and install from the Esri channel (conda install -c esri) 
+3. **You will 'conda activate' the cloned environment and install from the Esri channel (conda install -c esri)**
+
+Use
+
+```
+conda init
+```
+
+Close and reopen the Python Command Prompt, then activate it with
+
+```
+conda activate arcgispro-gpd-rio
+```
+
+Then install Fiona, GeoPandas, and Rasterio
+
+```
+conda install -c esri fiona geopandas rasterio
+```
+
+> [!Tip]
+> You can try a pip install if you have issues with conda install.
+
+```
+pip install fiona geopandas rasterio
+```
 
 
 You can also clone the environment with the Anaconda command prompt, but use the arcgispro-py3 path for your installation.   
@@ -67,9 +93,6 @@ If you are working with an IDE, set the Python interpreter of the target environ
 ## Batch file (.bat) Setup
 
 The zonal_statistics_gpd_arcgis_cmd.py script is an example of how to build command-line tools with [argparse](https://docs.python.org/3/library/argparse.html). Edit zonal_statistics_gpd_arcgis_cmd.txt to include the desired Python interpreter and path to zonal_statistics_gpd_arcgis_cmd.py:
-
-> [!WARNING]
-> File paths will vary based on your operating system.
 
 1. **Open zonal_statistics_gpd_arcgis_cmd.txt in a text editor**
 
