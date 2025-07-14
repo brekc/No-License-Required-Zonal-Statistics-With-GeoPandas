@@ -25,7 +25,7 @@ Use
 conda init
 ```
 
-Close and reopen the Python Command Prompt, then activate it with
+Close and reopen the Python Command Prompt, then activate the environment with
 
 ```
 conda activate arcgispro-gpd-rio
