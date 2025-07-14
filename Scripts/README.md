@@ -32,7 +32,7 @@ conda activate arcgis_pro
 conda install -c esri fiona geopandas rasterio
 ```
 
-2. **Open the Python scripts (.py)**
+3. **Open the Python scripts (.py)**
 
 If you are working with an IDE, set the Python interpreter of the target environment:
 
@@ -58,6 +58,8 @@ If you are working with an IDE, set the Python interpreter of the target environ
 
 ![](/Scripts/ArcGIS_Env_Setup/Conda_Nav_IDEs.png)
 
+4. **Run gdb_setup.py first to test your setup and create the geodatabase needed for the other scripts**
+   
 ## Batch file (.bat) Setup
 
 The zonal_statistics_gpd_arcgis_cmd.py script is an example of how to build command-line tools with [argparse](https://docs.python.org/3/library/argparse.html). Edit zonal_statistics_gpd_arcgis_cmd.txt to include the desired Python interpreter and path to zonal_statistics_gpd_arcgis_cmd.py:
