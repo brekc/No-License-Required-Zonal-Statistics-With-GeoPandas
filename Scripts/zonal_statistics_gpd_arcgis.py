@@ -68,7 +68,6 @@ def main():
         zone_gdf_trim_buff = zone_gdf_trim.copy()
         zone_gdf_trim_buff['geometry'] = zone_gdf_trim_buff.buffer(buffer_value)
 
-
         # Function for cell count
         def cell_count(rio_array):
             cells = rio_array.count()

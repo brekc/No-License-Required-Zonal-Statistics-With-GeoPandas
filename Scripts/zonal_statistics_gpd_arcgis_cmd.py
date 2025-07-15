@@ -89,7 +89,6 @@ def main():
         print('Opening zone boundary as a geodataframe...')
         zone_gdf = gpd.read_file(file_gdb, layer=zone_boundary, driver='OpenFileGDB')
 
-
         # Function for cell count
         def cell_count(rio_array):
             cells = rio_array.count()
