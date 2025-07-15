@@ -75,9 +75,9 @@ def main():
     try:
         print('Running script...')
 
-        # Convert file geodatabase raster to tif
+        # Convert file geodatabase raster to tiff
         # Rasterio and GDAL versioning differences can cause errors with file geodatabase rasters
-        print('Converting file geodatabse raster data to TIF format...')
+        print('Converting file geodatabse raster data to TIFF format...')
 
         arcpy.conversion.RasterToOtherFormat(gdb_raster, arcpy.env.workspace)
 

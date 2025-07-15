@@ -43,9 +43,9 @@ def main():
         raster_data = os.path.join(gdb_path, 'King_Co_2021_Ext_Perc')
         raster_tif = os.path.join(target_dir, 'King_Co_2021_Ext_Perc.tif')
 
-        # Convert file geodatabase raster to tif
+        # Convert file geodatabase raster to tiff
         # Rasterio and GDAL versioning differences can cause errors with file geodatabase rasters
-        print('Converting file geodatabse raster data to TIF format...')
+        print('Converting file geodatabse raster data to TIFF format...')
 
         arcpy.conversion.RasterToOtherFormat(raster_data, arcpy.env.workspace)
 

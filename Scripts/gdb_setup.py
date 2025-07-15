@@ -37,9 +37,10 @@ def main():
         study_area_shp = os.path.join(repo_dir, 'Inputs', 'Boundary', 'Redmond_Study_Area.shp')
         roads_shp = os.path.join(repo_dir, 'Inputs', 'Roads', 'Redmond_Roads.shp')
 
-        # Create a gdb if it doesn't exist
+        # Create a gdb if it does not exist
         gdb_name = "zonal_statistics_gpd_arcgis.gdb"
         gdb_path = os.path.join(gdb_dir, gdb_name)
+
         if not arcpy.Exists(gdb_path):
             arcpy.CreateFileGDB_management(gdb_dir, gdb_name)
             print(f"Geodatabase created at: {gdb_path}")
@@ -65,7 +66,6 @@ def main():
         print(arcpy.GetMessages(2))
 
     print('Finished running script')
-
 
 # INITIAL ENTRY POINT FOR SCRIPT
 if __name__ == '__main__':
