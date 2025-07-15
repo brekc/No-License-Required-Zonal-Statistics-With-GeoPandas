@@ -5,7 +5,7 @@
 
  Author:       Brek Chiles (Email-brekchiles@gmail.com, GitHub-brekc)
 
- Created:      7/13/2025
+ Created:      7/14/2025
 
  Updated:      00/00/0000
 
@@ -16,7 +16,6 @@
 
 import arcpy
 import argparse, os
-import pandas as pd
 import geopandas as gpd
 import rasterio as rio
 import numpy as np
@@ -68,7 +67,7 @@ raster_tif = raster_tif_env + raster_data + '.tif'
 from osgeo import gdal
 gdal.SetConfigOption("GDAL_MEM_ENABLE_OPEN", "YES")
 
-# Enviornment Setup
+# Environment Setup
 arcpy.env.workspace = raster_tif_env
 arcpy.env.overwriteOutput = True
 
@@ -92,12 +91,12 @@ def main():
 
 
         # Function for cell count
-        def cell_count(masked_array):
-            cells = masked_array.count()
+        def cell_count(rio_array):
+            cells = rio_array.count()
             return cells
         
         # Function for masked arrays
-        def masked_array(geom, data=raster_rio, **mask_args):
+        def masked_array(geom, data=raster_rio):
             raster_masked, raster_masked_transform = mask(dataset=data, shapes=[geom],
                                   crop=True, all_touched=touched_arg, filled= False, indexes=1)
             return raster_masked

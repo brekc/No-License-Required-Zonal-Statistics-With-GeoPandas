@@ -5,7 +5,7 @@
 
  Author:       Brek Chiles (Email-brekchiles@gmail.com, GitHub-brekc)
 
- Created:      7/13/2025
+ Created:      7/14/2025
 
  Updated:      00/00/0000
 
@@ -16,7 +16,6 @@
 
 import arcpy
 import os
-import pandas as pd
 import geopandas as gpd
 import rasterio as rio
 import numpy as np
@@ -32,7 +31,7 @@ print(f"Current working directory: {target_dir}")
 gdb_path = os.path.join(target_dir, 'zonal_statistics_gpd_arcgis.gdb')
 print(f"Geodatabase: {gdb_path}")
 
-# Enviornment Setup
+# Environment Setup
 arcpy.env.workspace = target_dir
 arcpy.env.overwriteOutput = True
 
@@ -71,12 +70,12 @@ def main():
 
 
         # Function for cell count
-        def cell_count(masked_array):
-            cells = masked_array.count()
+        def cell_count(rio_array):
+            cells = rio_array.count()
             return cells
         
         # Function for masked arrays
-        def masked_array(geom, data=raster_rio, **mask_args):
+        def masked_array(geom, data=raster_rio):
             raster_masked, raster_masked_transform = mask(dataset=data, shapes=[geom],
                                   crop=True, all_touched=True, filled= False, indexes=1)
             return raster_masked
