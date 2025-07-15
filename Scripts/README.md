@@ -91,7 +91,7 @@ If you are working with an IDE, set the Python interpreter of the target environ
 5. **Run gdb_setup.py first to test your setup and create the geodatabase needed for the other scripts**
 
 ## Warning and Error Message Handling
-This is a list of warnings and error messages with possible solutions:
+This is a list of warnings and error messages with possible solutions.
 - ...UserWarning: pyproj unable to set database path. _pyproj_global_context_initialize():
    - [Stack Overflow Post](https://stackoverflow.com/questions/69630630/on-fresh-conda-installation-of-pyproj-pyproj-unable-to-set-database-path-pypr)
    - [Post on Medium](https://mafarrag.medium.com/geospatial-python-packages-common-errors-150986b9cbfd)  
