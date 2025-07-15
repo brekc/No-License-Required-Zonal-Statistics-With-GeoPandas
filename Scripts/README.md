@@ -12,7 +12,7 @@ Settings &rarr; Package Manager &rarr; Enviornment Manager &rarr; Clone arcgispr
 
 2. **Activate the cloned environment, then open the Python Command Prompt**\
 Search "Python Command" and make sure it is located in ..\ArcGIS\Arc Pro\
-You should see the cloned environment (arcgispro-gpd-rio) listed in the Python Command Prompt
+You should see the cloned environment (arcgispro-gpd-rio for this example) listed in the Python Command Prompt
 
 ![](/Scripts/ArcGIS_Env_Setup/Add_Packages.png)
 
