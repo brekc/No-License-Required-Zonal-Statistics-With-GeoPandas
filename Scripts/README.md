@@ -19,13 +19,7 @@ You should see the cloned environment (arcgispro-gpd-rio for this example) liste
 
 3. **You will 'conda activate' the cloned environment and install from the Esri channel (conda install -c esri)**
 
-Use
-
-```
-conda init
-```
-
-Close and reopen the Python Command Prompt, then activate the environment with
+Use 'conda activate' if the environment is not activated
 
 ```
 conda activate arcgispro-gpd-rio
