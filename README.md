@@ -36,9 +36,6 @@
   
 * [Rasterstats](https://pythonhosted.org/rasterstats/)
   
-* [Seaborn](https://seaborn.pydata.org/)
-  
-* [Scipy](https://scipy.org/)
 
 ## Setup Recommendations
 
