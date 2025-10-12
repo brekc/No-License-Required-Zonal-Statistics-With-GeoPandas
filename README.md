@@ -52,7 +52,7 @@ conda install git
 Use git clone:
 
 ```
-git clone https://github.com/brekc/No_License_Required-Zonal_Statistics_With_GeoPandas.git
+git clone https://github.com/brekc/No-License-Required-Zonal-Statistics-With-GeoPandas.git
 ```
 
 2. **Create a new environment**
