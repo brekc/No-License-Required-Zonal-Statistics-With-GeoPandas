@@ -60,7 +60,7 @@ git clone https://github.com/brekc/No-License-Required-Zonal-Statistics-With-Geo
 Change directories to where GIS_Python_Env.yml is located
 
 ```
-cd No_License_Required-Zonal_Statistics_With_GeoPandas
+cd No-License-Required-Zonal-Statistics-With-GeoPandas
 ```
 
 ```
