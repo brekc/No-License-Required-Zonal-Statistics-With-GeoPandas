@@ -115,5 +115,5 @@ Edit the paths for the Python interpreter and zonal_statistics_gpd_arcgis_cmd.py
 A command for the geodatabase from gdb_setup.py will look like:
 
 ```
-C:\Users\brekc\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts\zonal_statistics_gpd_arcgis_cmd.bat -gdb C:\Users\brekc\No_License_Required-Zonal_Statistics_With_GeoPandas\Scripts\zonal_statistics_gpd_arcgis.gdb -zone Redmond_Roads -raster King_Co_2021_Ext_Perc -touched On -output zonal_stats_test
+C:\Users\brekc\No-License-Required-Zonal-Statistics-With-GeoPandas\Scripts\zonal_statistics_gpd_arcgis_cmd.bat -gdb C:\Users\brekc\No-License-Required-Zonal-Statistics-With-GeoPandas\Scripts\zonal_statistics_gpd_arcgis.gdb -zone Redmond_Roads -raster King_Co_2021_Ext_Perc -touched On -output zonal_stats_test
 ``` 
