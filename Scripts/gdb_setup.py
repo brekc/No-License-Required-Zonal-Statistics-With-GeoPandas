@@ -17,7 +17,6 @@
 import os
 import arcpy
 
-
 # Setup directory for gdb
 gdb_dir = os.path.dirname(os.path.abspath(__file__))
 print(f"Current working directory: {gdb_dir}")
