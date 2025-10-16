@@ -14,8 +14,9 @@
  Copyright:    (c) 2025 Brek Chiles
 """
 
-import arcpy
 import os
+import arcpy
+
 
 # Setup directory for gdb
 gdb_dir = os.path.dirname(os.path.abspath(__file__))

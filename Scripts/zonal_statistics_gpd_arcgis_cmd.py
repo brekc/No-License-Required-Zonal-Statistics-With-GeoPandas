@@ -14,11 +14,11 @@
  Copyright:    (c) 2025 Brek Chiles
 """
 
-import arcpy
 import argparse, os
+import arcpy
 import geopandas as gpd
-import rasterio as rio
 import numpy as np
+import rasterio as rio
 from rasterio.mask import mask
 
 # Parse input arguments
