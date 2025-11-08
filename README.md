@@ -1,5 +1,5 @@
 
-# No License Required - Zonal Statistics With GeoPandas 
+# No License Required - Zonal Statistics with GeoPandas 
 
 **Brek Chiles, 2025**
 
